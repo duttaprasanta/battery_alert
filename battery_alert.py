@@ -8,9 +8,9 @@ import argparse					# For Argument Parser
 
 # User Inputs
 parser = argparse.ArgumentParser(description="Enter args")
-parser.add_argument('--sleep_time', required=False, help='How long the app to sleep',default=10, type=int)
+parser.add_argument('--sleep_time', required=False, help='How long the app to sleep',default=5 * 60, type=int)
 parser.add_argument('--log_percentage', required=False, help='Logging frequency (in percentage difference)',default=1, type=int)
-parser.add_argument('--alert_percentage', required=False, help='When to alert (at which percentage)',default=50, type=int)
+parser.add_argument('--alert_percentage', required=False, help='When to alert (at which percentage)',default=20, type=int)
 parser.add_argument('--notification_alert', required=False, help='Enable/ Disable text notification',default=True, type=bool)
 parser.add_argument('--sound_alert', required=False, help='Enable/ Disable sound notification',default=True, type=bool)
 args = parser.parse_args()
