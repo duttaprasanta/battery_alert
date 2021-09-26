@@ -91,7 +91,7 @@ Website : [https://duttaprasanta.github.io/battery_alert](https://duttaprasanta.
 
 Github : [https://github.com/duttaprasanta/battery_alert](https://github.com/duttaprasanta/battery_alert)
 
-Email : [prasanta7dutta@gmail.com](prasanta7dutta@gmail.com)
+Email : prasanta7dutta@gmail.com
 
 # Support
 If you like this repository, kindly star it and follow me.
