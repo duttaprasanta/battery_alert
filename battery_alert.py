@@ -67,7 +67,7 @@ while(True):
 		    
 		    # Text notification
 		    notification.notify(
-		        title = 'Bettery Percentage',
+		        title = 'Battery Percentage',
 		        message = str(round(current_percent)) + '%',
 		        app_name = 'Battery Alert',
 		        timeout = 1,

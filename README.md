@@ -1,5 +1,5 @@
-![alt text](./resources/text_alert_linux.png "Text notification")
 # Battery Alert
+![alt text](./resources/text_alert_linux.png "Text notification")
 This program will maintain a log of battery percentage and notify users using text and voice notifications. 
 
 # Motivation
