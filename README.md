@@ -87,7 +87,11 @@ E.g, Here the base date and time is 25th September 2021 at 11:38 pm. The third e
 GNU Affero General Public License v3.0. See [License](./LICENSE) for more information.
 
 # Some useful links
+Website : [https://duttaprasanta.github.io/battery_alert](https://duttaprasanta.github.io/battery_alert)
 
+Github : [https://github.com/duttaprasanta/battery_alert](https://github.com/duttaprasanta/battery_alert)
+
+Email : [prasanta7dutta@gmail.com](mailto:prasanta7dutta@gmail.com)
 
 # Support
 If you like this repository, kindly star it and follow me.
