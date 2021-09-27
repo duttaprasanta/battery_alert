@@ -6,17 +6,20 @@ This program will maintain a log of battery percentage and notify users using te
 In Ubuntu 20.04, I was not getting any low battery notifications. My laptop was shutting down suddenly without any alert. I tried to use many tweaks from the Internet though nothing worked perfectly. Annoyed with the problem, I have created *Battery Alert*, a simple lightweight and customizable application for measuring battery percentage after a specific time interval.     
 
 # Features
-1. Maintain a log file with battery percentage, charging status, duration after a specific percentage change in battery status.
-2. Show a text alert when battery percentage is below a certain threshold and it is not charging.
-3. Send a sound alert when the battery percentage is below a certain threshold and it is not charging.
-4. Run on Windows and Linux (Not tested in Mac)
+The application has the following features - 
+1. **Maintains a log file with battery percentage, charging status, duration after a specific percentage change in battery status.**
+2. **Shows a text alert when battery percentage is below a certain threshold and it is not charging.**
+3. **Sends a sound alert when the battery percentage is below a certain threshold and it is not charging.**
+4. **Shows alerts when battery is charged fully.**
+5. **Runs on Windows and Linux** (Not tested in Mac)
 
 # Why to use?
 1. If your laptop's battery is faulty and you want to measure battery capacity.
 2. If you want to get notifications after a certain threshold of your laptop's battery.
 3. If you want to keep track battery's charging time and discharging time.
 4. If you want to keep track of the rate of discharging.
-5. Something else
+5. If you want to get alerts after your laptop's battery is charged fully.
+6. Something else
 
 # How to use it?
 > **Note: Here the program is tested in python3**

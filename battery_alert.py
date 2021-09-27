@@ -62,8 +62,8 @@ while(True):
 		old_percent = current_percent
 		first = False
 
-		# True when alert is enabled and current percentage <= threshold and not charging
-		if (notification_alert==True and current_percent<=alert_percentage and plugged==False):
+		# True when alert is enabled and (current percentage <= threshold and not charging) or battery is fully charged
+		if (notification_alert==True and ((current_percent<=alert_percentage and plugged==False) or (current_percent>=100 and plugged==True))):
 		    
 		    # Text notification
 		    notification.notify(
@@ -75,8 +75,8 @@ while(True):
 		        toast = False
 		    )
 		
-		# True when sound alert is enabled and current percentage <= threshold and not charging
-		if(sound_alert==True and current_percent <= alert_percentage and plugged==False):
+		# True when sound alert is enabled and current percentage <= threshold and not charging or battery is fully charged
+		if(sound_alert==True and ((current_percent <= alert_percentage and plugged==False) or (current_percent>=100 and plugged==True))):
 		    # Sound Notification
 			engine.say(f"Battery percentage {round(current_percent)} %")
 			engine.runAndWait()
