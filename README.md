@@ -86,13 +86,10 @@ When the program is executed, the current time and date will be added in the log
 
 E.g, Here the base date and time is 25th September 2021 at 11:38 pm. The third entry describes after 10 minutes from base time and after 5 minutes from the previous entry, the battery percentage was 77% and it is not charging.
 
-# License
-GNU Affero General Public License v3.0. See [License](./LICENSE) for more information.
-
 # Some useful links
-Website : [https://duttaprasanta.github.io/battery_alert](https://duttaprasanta.github.io/battery_alert)
+Project Website : [https://duttaprasanta.github.io/battery_alert](https://duttaprasanta.github.io/battery_alert)
 
-Github : [https://github.com/duttaprasanta/battery_alert](https://github.com/duttaprasanta/battery_alert)
+Project Link : [https://github.com/duttaprasanta/battery_alert](https://github.com/duttaprasanta/battery_alert)
 
 Email : prasanta7dutta@gmail.com
 
