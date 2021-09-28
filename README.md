@@ -1,5 +1,6 @@
 # Battery Alert
 ![alt text](./resources/text_alert_linux.png "Text notification")
+
 This program will maintain a log of battery percentage and notify users using text and voice notifications. 
 
 # Motivation
@@ -7,11 +8,11 @@ In Ubuntu 20.04, I was not getting any low battery notifications. My laptop was 
 
 # Features
 The application has the following features - 
-1. **Maintains a log file with battery percentage, charging status, duration after a specific percentage change in battery status.**
-2. **Shows a text alert when battery percentage is below a certain threshold and it is not charging.**
-3. **Sends a sound alert when the battery percentage is below a certain threshold and it is not charging.**
-4. **Shows alerts when battery is charged fully.**
-5. **Runs on Windows and Linux** (Not tested in Mac)
+1. Maintains a log file with battery percentage, charging status, duration after a specific percentage change in battery status.
+2. Shows a text alert when battery percentage is below a certain threshold and it is not charging.
+3. Sends a sound alert when the battery percentage is below a certain threshold and it is not charging.
+4. Shows alerts when battery is charged fully.
+5. Runs on Windows and Linux (Not tested in Mac)
 
 # Why to use?
 1. If your laptop's battery is faulty and you want to measure battery capacity.
@@ -94,7 +95,7 @@ Project Link : [https://github.com/duttaprasanta/battery_alert](https://github.c
 Email : prasanta7dutta@gmail.com
 
 # Support
-If you like this repository, kindly star it and follow me.
+If you like this repository, kindly :star: it and follow me.
 
 # Want to contribute?
 1. **Fork** this repository
