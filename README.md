@@ -63,19 +63,26 @@ If you face dependency conflicts, create a virtual environment and follow the ab
 ## Step 3 (If you want to run the program at system startup)
 ### For Linux
 Create an entry in the *Startup Application* app
-```python
+```
 python3 /home/<your_user_name>/battery_alert.py
 ```
 ![Startup](./resources/startup_linux.png "Startup")
 ### For Windows
 Run the following command:
-'''
+
+```
 python win_autostart.py
-'''
-Right click on `battery_alert.vbs` file and select **Create shortcut** option. 
-Now open the below location in a **New window** and **Cut + Paste** the **battery_alert.vbs - Shortcut** in the location given below:
-`C:\Users\<WindowsUserName>\AppData\Roaming\Microsoft\Windows\Start Menu\Programs\Startup`
-> **Note: Replace "<WindowsUserName>" with the Windows UserName.
+```
+
+Right click on `battery_alert.vbs` file and select `Create shortcut` option. 
+
+Now open the below location in a `New window` and `Cut + Paste` the `battery_alert.vbs - Shortcut` file in it.
+
+```
+C:\Users\<WindowsUserName>\AppData\Roaming\Microsoft\Windows\Start Menu\Programs\Startup
+```
+> **Note:** Replace `<WindowsUserName>` with the Windows UserName.
+  
 ![Windows Startup Location](./resources/win_startup_location.png "Windows Startup Location")
 
 # Parameters
