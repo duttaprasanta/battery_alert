@@ -1,5 +1,5 @@
 # Battery Alert
-![alt text](./resources/text_alert_linux.png "Text notification")
+![Text Notification](./resources/text_alert_linux.png "Text notification")
 
 This program will maintain a log of battery percentage and notify users using text and voice notifications. 
 
@@ -30,7 +30,7 @@ Go to your terminal and run it as simple as the following -
 python battery_alert.py
 ```
 You can also customize the default parameters by doing the following -
-```
+```python
 python battery_alert.py --sleep_time=300 --log_percentage=1 --alert_percentage=20 --notification_alert=True --sound_alert=True 
 ```
 All the parameters are shown above with default values. You can customize them as you want. 
@@ -44,7 +44,7 @@ git clone https://github.com/duttaprasanta/battery_alert.git
 ```
 You may also download the zip file.
 
-![alt text](./resources/download_zip.png "Download zip file")
+![Download zip file](./resources/download_zip.png "Download zip file")
 
 Then extract it.
 
@@ -63,10 +63,20 @@ If you face dependency conflicts, create a virtual environment and follow the ab
 ## Step 3 (If you want to run the program at system startup)
 ### For Linux
 Create an entry in the *Startup Application* app
-```
+```python
 python3 /home/<your_user_name>/battery_alert.py
 ```
-![alt text](./resources/startup_linux.png "Startup")
+![Startup](./resources/startup_linux.png "Startup")
+### For Windows
+Run the following command:
+'''
+python win_autostart.py
+'''
+Right click on `battery_alert.vbs` file and select **Create shortcut** option. 
+Now open the below location in a **New window** and **Cut + Paste** the **battery_alert.vbs - Shortcut** in the location given below:
+`C:\Users\<WindowsUserName>\AppData\Roaming\Microsoft\Windows\Start Menu\Programs\Startup`
+> **Note: Replace "<WindowsUserName>" with the Windows UserName.
+![Windows Startup Location](./resources/win_startup_location.png "Windows Startup Location")
 
 # Parameters
 1. **sleep_time** : (Datatype = Integer). Interval (in seconds) to check for battery percentage. This indicates how much time (in seconds) the application to sleep. E.g, `sleep_time=300` means the application will be activated after every 300 seconds (5 minutes).
