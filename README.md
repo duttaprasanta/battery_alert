@@ -1,5 +1,5 @@
 # Battery Alert
-![alt text](./resources/text_alert_linux.png "Text notification")
+![Text Notification](./resources/text_alert_linux.png "Text notification")
 
 This program will maintain a log of battery percentage and notify users using text and voice notifications. 
 
@@ -44,7 +44,7 @@ git clone https://github.com/duttaprasanta/battery_alert.git
 ```
 You may also download the zip file.
 
-![alt text](./resources/download_zip.png "Download zip file")
+![Download zip file](./resources/download_zip.png "Download zip file")
 
 Then extract it.
 
@@ -66,7 +66,24 @@ Create an entry in the *Startup Application* app
 ```
 python3 /home/<your_user_name>/battery_alert.py
 ```
-![alt text](./resources/startup_linux.png "Startup")
+![Startup](./resources/startup_linux.png "Startup")
+### For Windows
+Run the following command:
+
+```
+python win_autostart.py
+```
+
+Right click on `battery_alert.vbs` file and select `Create shortcut` option. 
+
+Now open the below location in a `New window` and `Cut + Paste` the `battery_alert.vbs - Shortcut` file in it.
+
+```
+C:\Users\<WindowsUserName>\AppData\Roaming\Microsoft\Windows\Start Menu\Programs\Startup
+```
+> **Note:** Replace `<WindowsUserName>` with the Windows UserName.
+  
+![Windows Startup Location](./resources/win_startup_location.png "Windows Startup Location")
 
 # Parameters
 1. **sleep_time** : (Datatype = Integer). Interval (in seconds) to check for battery percentage. This indicates how much time (in seconds) the application to sleep. E.g, `sleep_time=300` means the application will be activated after every 300 seconds (5 minutes).
@@ -83,7 +100,7 @@ python3 /home/<your_user_name>/battery_alert.py
 When the program is executed, the current time and date will be added in the log file named *battery_alert.log*. This date and time are considered as *base time*. Then it adds a log entry after every *log_percentage* apart as discussed above. The log entry will have four comma-separated values- 
 > battery percentage, Whether charging or not, Time between every entry, Total time from base time to the current entry
 
-![alt text](./resources/log.png "Log File")
+![Log File](./resources/log.png "Log File")
 
 E.g, Here the base date and time is 25th September 2021 at 11:38 pm. The third entry describes after 10 minutes from base time and after 5 minutes from the previous entry, the battery percentage was 77% and it is not charging.
 
