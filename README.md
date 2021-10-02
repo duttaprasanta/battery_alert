@@ -69,19 +69,17 @@ python3 /home/<your_user_name>/battery_alert.py
 ![Startup](./resources/startup_linux.png "Startup")
 ### For Windows
 Run the following command:
-
 ```
 python win_autostart.py
 ```
-
-Right click on `battery_alert.vbs` file and select `Create shortcut` option. 
-
-Now open the below location in a `New window` and `Cut + Paste` the `battery_alert.vbs - Shortcut` file in it.
+A file named ```battery_alert.vbs``` will be generated. Now you can paste that file or shortcut of that file inside the following folder. 
 
 ```
 C:\Users\<WindowsUserName>\AppData\Roaming\Microsoft\Windows\Start Menu\Programs\Startup
 ```
-> **Note:** Replace `<WindowsUserName>` with the Windows UserName.
+> **Notes** 
+1. Replace `<WindowsUserName>` with your user name.
+2. By default `AppData` file is hidden. To view that click on `View` > `Hidden items` on File Explorer.
   
 ![Windows Startup Location](./resources/win_startup_location.png "Windows Startup Location")
 
