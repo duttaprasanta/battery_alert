@@ -72,17 +72,18 @@ Run the following command:
 ```
 python win_autostart.py
 ```
-A file named ```battery_alert.vbs``` will be generated. Now you can paste that file or shortcut of that file inside the following folder. 
-
+A file named ```battery_alert.vbs``` will be generated. Now you paste the shortcut of that file inside the following folder
 ```
 C:\Users\<WindowsUserName>\AppData\Roaming\Microsoft\Windows\Start Menu\Programs\Startup
 ```
+
+![Windows Startup Location](./resources/win_startup_location.png "Windows Startup Location")
+
 > **Notes** 
 1. Replace `<WindowsUserName>` with your user name.
 2. By default `AppData` file is hidden. To view that click on `View` > `Hidden items` on File Explorer.
+3. If you want to change the default parameters of the program, you need to change that inside the generated file named `win_autostart.bat` also.
   
-![Windows Startup Location](./resources/win_startup_location.png "Windows Startup Location")
-
 # Parameters
 1. **sleep_time** : (Datatype = Integer). Interval (in seconds) to check for battery percentage. This indicates how much time (in seconds) the application to sleep. E.g, `sleep_time=300` means the application will be activated after every 300 seconds (5 minutes).
 
