@@ -30,7 +30,7 @@ Go to your terminal and run it as simple as the following -
 python battery_alert.py
 ```
 You can also customize the default parameters by doing the following -
-```python
+```
 python battery_alert.py --sleep_time=300 --log_percentage=1 --alert_percentage=20 --notification_alert=True --sound_alert=True 
 ```
 All the parameters are shown above with default values. You can customize them as you want. 
@@ -100,7 +100,7 @@ C:\Users\<WindowsUserName>\AppData\Roaming\Microsoft\Windows\Start Menu\Programs
 When the program is executed, the current time and date will be added in the log file named *battery_alert.log*. This date and time are considered as *base time*. Then it adds a log entry after every *log_percentage* apart as discussed above. The log entry will have four comma-separated values- 
 > battery percentage, Whether charging or not, Time between every entry, Total time from base time to the current entry
 
-![alt text](./resources/log.png "Log File")
+![Log File](./resources/log.png "Log File")
 
 E.g, Here the base date and time is 25th September 2021 at 11:38 pm. The third entry describes after 10 minutes from base time and after 5 minutes from the previous entry, the battery percentage was 77% and it is not charging.
 

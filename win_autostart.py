@@ -1,7 +1,8 @@
 from sys import platform        # For detecting OS
 import os
 
-if platform == "win32":    # Windows OS
+# Checks for Windows OS(both 32 & 64 bit)
+if platform == "win32": 
     # generate battery_alert.bat script
     dir_path = os.path.dirname(os.path.realpath(__file__))
     py_abs_path = '"' + os.path.join(dir_path, 'battery_alert.py') + '"\n'
@@ -19,5 +20,12 @@ if platform == "win32":    # Windows OS
     with open(vbs_path, 'w') as fp:
         temp = 'CreateObject("Wscript.Shell").Run "win_autostart.bat", 0, True'
         fp.write(temp)
+    print('Operation Completed Successfully...')
+    
+# Check for Linux OS		
+elif platform.startswith("linux"):
+    print('Linux OS is detected.\nThis code is only for Windows OS.')
 
-    print("Registry values:--\nvalue name: batteryAlertApp\nvalue data: ", vbs_path, "\n")
+# Check for MAC OS	
+elif platform == "darwin":
+    print('Mac OS is detected.\nThis code is only for Windows OS.')
