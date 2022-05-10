@@ -51,6 +51,7 @@ Then extract it.
 ## Step 2
 ### For Linux
 ```
+sudo apt-get install espeak
 sudo apt-get install libdbus-glib-1-dev libdbus-1-dev
 pip install -r requirements_linux.txt
 ```
