@@ -23,70 +23,19 @@ The application has the following features -
 6. Something else
 
 # How to use it?
-> **Note: Here the program is tested in python3**
 
 Go to your terminal and run it as simple as the following - 
 ```
-python battery_alert.py
+python3 battery_alert.py
 ```
 You can also customize the default parameters by doing the following -
 ```
-python battery_alert.py --sleep_time=300 --log_percentage=1 --alert_percentage=20 --notification_alert=True --sound_alert=True 
+python3 battery_alert.py --sleep_time=300 --log_percentage=1 --alert_percentage=20 --notification_alert=True --sound_alert=True 
 ```
 All the parameters are shown above with default values. You can customize them as you want. 
 
-# Installation
-
-## Step 1 
-Clone the repository by
-```
-git clone https://github.com/duttaprasanta/battery_alert.git
-```
-You may also download the zip file.
-
-![Download zip file](./resources/download_zip.png "Download zip file")
-
-Then extract it.
-
-## Step 2
-### For Linux
-```
-sudo apt-get install espeak
-sudo apt-get install libdbus-glib-1-dev libdbus-1-dev
-pip install -r requirements_linux.txt
-```
-### For Windows
-```
-pip install -r requirements_windows.txt
-```
-If you face dependency conflicts, create a virtual environment and follow the above steps. 
-
-## Step 3 (If you want to run the program at system startup)
-### For Linux
-Create an entry in the *Startup Application* app
-```
-python3 /home/<your_user_name>/battery_alert.py
-```
-![Startup](./resources/startup_linux.png "Startup")
-### For Windows
-Run the following command:
-```
-python win_autostart.py
-```
-A file named ```battery_alert.vbs``` will be generated. Now you paste the shortcut of that file inside the following folder
-```
-C:\Users\<WindowsUserName>\AppData\Roaming\Microsoft\Windows\Start Menu\Programs\Startup
-```
-
-![Windows Startup Location](./resources/win_startup_location.png "Windows Startup Location")
-
-> **Notes** 
-1. Replace `<WindowsUserName>` with your user name.
-2. By default `AppData` file is hidden. To view that click on `View` > `Hidden items` on File Explorer.
-3. If you want to change the default parameters of the program, you need to change that inside the generated file named `win_autostart.bat` also.
-  
 # Parameters
-1. **sleep_time** : (Datatype = Integer). Interval (in seconds) to check for battery percentage. This indicates how much time (in seconds) the application to sleep. E.g, `sleep_time=300` means the application will be activated after every 300 seconds (5 minutes).
+1. **sleep_time** : (Datatype = Integer). Interval (in seconds) to check for the battery percentage. E.g, `sleep_time=300` means the application will be activated after every 300 seconds (5 minutes).
 
 2. **log_percentage** : (Datatype = Integer). Writes an entry in the log file after every *log_percentage* difference in battery status. E.g, `log_percentage=1` means the application will add an entry after every 1% of change in battery status.
 
@@ -103,6 +52,88 @@ When the program is executed, the current time and date will be added in the log
 ![Log File](./resources/log.png "Log File")
 
 E.g, Here the base date and time is 25th September 2021 at 11:38 pm. The third entry describes after 10 minutes from base time and after 5 minutes from the previous entry, the battery percentage was 77% and it is not charging.
+
+# Installation
+
+## Step 1 
+Clone the repository by
+```
+git clone https://github.com/duttaprasanta/battery_alert.git
+```
+You may also download the zip file.
+
+![Download zip file](./resources/download_zip.png "Download zip file")
+
+Then extract it.
+
+## Step 2
+
+### For Linux
+
+#### Requirements
+This app requires the below 3 
+1. python3-pip
+2. gcc
+3. espeak
+4. libdbus-glib-1-dev, libdbus-1-dev (for ubuntu)
+
+For the installation of the above packages use the below command -
+```
+<package manager> install <package name>
+``` 
+For example for ubuntu it should be as follows-
+
+```
+sudo apt-get update
+sudo apt-get install python3-pip
+sudo apt-get install gcc
+sudo apt-get install espeak
+sudo apt-get install libdbus-glib-1-dev libdbus-1-dev
+```
+Then install the pip dependencies as follows-
+```
+pip install --upgrade pip
+pip install -r requirements_linux.txt
+```
+### For Windows
+```
+pip install --upgrade pip
+pip install -r requirements_windows.txt
+```
+If you face dependency conflicts, create a virtual environment and follow the above steps. You may also try the tested-dependencies - requirements_linux_legacy.txt/ requirements_windows_legacy.txt
+
+### Test the installation
+**First unplug the charger from your laptop. Then execute the below command -**
+```
+python3 battery_alert.py --log_percentage=1 --alert_percentage=100 --sleep_time=0
+```
+You should see a text notification and hear a sound alert upon successful execution of the above command. 
+
+## Step 3 (If you want to run the program at system startup)
+
+### For Linux
+Create an entry in the *Startup Application* app
+```
+python3 /home/<your_user_name>/battery_alert.py
+```
+![Startup](./resources/startup_linux.png "Startup")
+
+### For Windows
+Run the following command:
+```
+python win_autostart.py
+```
+A file named ```battery_alert.vbs``` will be generated. Now you paste the shortcut of that file inside the following folder
+```
+C:\Users\<WindowsUserName>\AppData\Roaming\Microsoft\Windows\Start Menu\Programs\Startup
+```
+
+![Windows Startup Location](./resources/win_startup_location.png "Windows Startup Location")
+
+> **Notes** 
+1. Replace `<WindowsUserName>` with your user name.
+2. By default `AppData` file is hidden. To view that click on `View` > `Hidden items` on File Explorer.
+3. If you want to change the default parameters of the program, you need to change that inside the generated file named `win_autostart.bat` also.
 
 # Some useful links
 Project Website : [https://duttaprasanta.github.io/battery_alert](https://duttaprasanta.github.io/battery_alert)
