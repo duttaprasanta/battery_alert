@@ -114,7 +114,7 @@ You should see a text notification and hear a sound alert upon successful execut
 ### For Linux
 Create an entry in the *Startup Application* app
 ```
-python3 /home/<your_user_name>/battery_alert.py
+python3 <path to the parent folder of the app>/battery_alert.py
 ```
 ![Startup](./resources/startup_linux.png "Startup")
 
